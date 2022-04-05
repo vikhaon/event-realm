@@ -1,5 +1,5 @@
 import React from 'react';
-import { AccountBox } from '../../AccountBox';
+import { AccountBox } from '../../AccountBox/AccountBox';
 import Modal, { CloseBtnX, ModalContainer, Overlay } from '../Modal';
 
 const ModalAccount = ({ closeFn = () => null, open = false }) => {
