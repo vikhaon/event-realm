@@ -11,8 +11,8 @@ export const Items = styled.li`
 `;
 
 export const iconButton = css`
-  width: 30px;
-  height: 30px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: ${({ theme }) => theme.primary};
   border-radius: 50%;
   padding: 5px;
@@ -33,8 +33,8 @@ export const IconButtonLink = styled(Link)`
 
 const iconsStyles = css`
   fill: ${({ theme }) => theme.bg};
-  width: 24px;
-  height: 24px;
+  width: 1rem;
+  height: 1rem;
 `;
 
 export const ChevronDownIcon = styled(FaChevronDown)`

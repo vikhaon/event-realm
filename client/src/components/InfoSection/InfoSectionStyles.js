@@ -16,7 +16,7 @@ export const InfoWrapper = styled.div`
   height: 870px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 ${vars.mdSpacing};
+  padding: 0 ${vars.lgSpacing};
   border-bottom: 1px solid ${({ color }) => (color ? color : 'lightgray')};
 `;
 
@@ -59,6 +59,7 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  margin-top: 1rem;
   margin-bottom: ${vars.mdSpacing};
 `;
 
@@ -85,6 +86,10 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 1252px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const ImgWrap = styled.div`

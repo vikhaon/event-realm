@@ -65,7 +65,7 @@ const Navbar = ({ toggle, openTheModal }) => {
             </NavItemLi>
             <NavItemLi>
               <NavLinks
-                to='signup'
+                to='account'
                 smooth={true}
                 duration={500}
                 spy={true}

@@ -57,22 +57,3 @@ export const FormButton = styled.button`
   padding: 6px 12px;
   letter-spacing: 0.6px;
 `;
-
-export const SliderButton = styled.button`
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  background: rgb(255, 0, 68);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  box-shadow: inset 0 0 0 #f9e506;
-  transition: ease-out 0.3s;
-  font-size: 24px;
-  outline: none;
-
-  &:hover {
-    box-shadow: inset 300px 0 0 #f9e506;
-    cursor: pointer;
-    color: #000;
-  }
-`;

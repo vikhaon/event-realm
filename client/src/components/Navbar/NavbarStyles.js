@@ -47,7 +47,7 @@ export const NavLogoName = styled.b`
   letter-spacing: 2px;
   font-weight: 400;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1124px) {
     display: none;
   }
 `;
@@ -72,10 +72,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const NavItemLi = styled.li`
@@ -94,6 +90,10 @@ export const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 3px solid ${({ color, theme }) => (color ? color : theme.white)};
   }
+
+  @media screen and (max-width: 968px) {
+    display: none;
+  }
 `;
 
 export const NavRight = styled.nav`
@@ -109,22 +109,3 @@ export const ModalButtonWrapper = styled.div`
   position: relative;
   z-index: 1;
 `;
-
-// export const NavBtnLink = styled.button`
-//   border-radius: 50px;
-//   background: ${({ theme }) => theme.primary};
-//   white-space: nowrap;
-//   padding: ${vars.smSpacing} ${vars.mdSpacing};
-//   color: ${({ theme }) => theme.bg};
-//   font-size: 16px;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-//   text-decoration: none;
-
-//   &:hover {
-//     transition: all 0.2s ease-in-out;
-//     filter: brightness(1.2);
-//   }
-// `;

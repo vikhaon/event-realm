@@ -1,4 +1,6 @@
 import React from 'react';
+import AccountModalButton from '../Buttons/AccountModalButton';
+import FormModalButton from '../Buttons/FormModalButton';
 import ThemeButton from '../Buttons/ThemeButton/ThemeButton';
 import {
   SidebarContainer,
@@ -9,10 +11,9 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute,
 } from './SidebarStyles';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, openTheModal }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       <IconX onClick={toggle}>
@@ -26,20 +27,19 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to='about' onClick={toggle}>
             About
           </SidebarLink>
+          <SidebarLink to='account' onClick={toggle}>
+            Account
+          </SidebarLink>
           <SidebarLink to='discover' onClick={toggle}>
             Discover
           </SidebarLink>
           <SidebarLink to='services' onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to='signup' onClick={toggle}>
-            Sign Up
-          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/signin' onClick={toggle}>
-            Sign In
-          </SidebarRoute>
+          <FormModalButton onClick={openTheModal}>Create Event</FormModalButton>
+          <AccountModalButton onClick={openTheModal}>Sign in</AccountModalButton>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

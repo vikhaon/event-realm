@@ -12,7 +12,7 @@ export const aboutObjectData = {
 };
 
 export const signUpObjectData = {
-  id: 'signup',
+  id: 'account',
   color: '#72c259',
   topLine: 'Join the Realm',
   headLine: 'Creating an account is extremely easy',
