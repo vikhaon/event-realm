@@ -1,6 +1,6 @@
 # Event Realm
 
-**The projects is not completely finished yet.**
+**The project is not completely finished yet.**
 
 It's a MERN application that will allow users to Create, Update, Delete and Share Events in their lives.
 
@@ -15,10 +15,12 @@ It's a MERN application that will allow users to Create, Update, Delete and Shar
 
 `Database`: MongoDB with:
 
-- Mongoose
 - MongoDB Atlas for storing the database in the cloud
 
-`Server`: Node/Express.js
+`Server`: Node.js with:
+
+- Express.js framework
+- Mongoose
 
 `TODO:`
 
